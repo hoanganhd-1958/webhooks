@@ -113,6 +113,7 @@ type PipelineEventPayload struct {
 	Commit           Commit                   `json:"commit"`
 	ObjectAttributes PipelineObjectAttributes `json:"object_attributes"`
 	Jobs             []Job                    `json:"jobs"`
+	MergeRequest     MergeRequest             `json:"merge_request"`
 }
 
 // CommentEventPayload contains the information for GitLab's comment event
@@ -421,6 +422,7 @@ type MergeRequest struct {
 	LastCommit      LastCommit `json:"last_commit"`
 	WorkInProgress  bool       `json:"work_in_progress"`
 	Assignee        Assignee   `json:"assignee"`
+	URL             string     `json:"url"`
 }
 
 // Assignee contains all of the GitLab assignee information
