@@ -247,6 +247,7 @@ type Commit struct {
 	Added     []string   `json:"added"`
 	Modified  []string   `json:"modified"`
 	Removed   []string   `json:"removed"`
+	Title     string     `json:"title"`
 }
 
 // BuildCommit contains all of the GitLab build commit information
